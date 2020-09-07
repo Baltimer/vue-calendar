@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="h-screen flex justify-center items-center bg-gray-300">
+  <div id="app" class="h-screen flex-col justify-center pt-5 pb-3 bg-gray-300">
     <div id="calendar" class="w-full sm:w-2/3 md:w-3/5 lg:w-1/3 rounded border px-2 sm:px-0">
       <section class="flex justify-evenly px-1 mb-1">
         <a v-on:click="changeMonth(-1)" class="flex-shrink cursor-pointer text-gray-800 underline">{{'< ' + previousMonth}}</a>
@@ -31,6 +31,19 @@
           </li>
         </ul>
       </section>
+    </div>
+    <div id="events" class="w-full flex-1 p-2 overflow-auto">
+      <ul class="list-none">
+        <li class="w-full rounded border border-blue-600 p-2">Test</li>
+        <li class="w-full rounded border border-yellow-600 p-2 mt-2">Test</li>
+        <li class="w-full rounded border border-green-600 p-2 mt-2">Test</li>
+        <li class="w-full rounded border border-black p-2 mt-2">Test</li>
+        <li class="w-full rounded border p-2 mt-2">Test</li>
+        <li class="w-full rounded border p-2 mt-2">Test</li>
+        <li class="w-full rounded border p-2 mt-2">Test</li>
+        <li class="w-full rounded border p-2 mt-2">Test</li>
+        <li class="w-full rounded border p-2 mt-2">Test</li>
+      </ul>
     </div>
 
     <!-- MODAL -->
